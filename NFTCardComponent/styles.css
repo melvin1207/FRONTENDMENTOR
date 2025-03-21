@@ -23,10 +23,10 @@ body{
 
 main{
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     max-width: 350px;
     background-color: var(--Very-dark-blue-card);
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 25px;
     box-shadow: 20px 30px hsl(218, 58%, 10%), -20px 30px hsl(218, 58%, 10%), 50px 60px hsl(217, 45%, 11%), -50px -30px hsl(217, 45%, 11%), -50px 60px hsl(217, 45%, 11%), 50px -30px hsl(217, 45%, 11%);
 }

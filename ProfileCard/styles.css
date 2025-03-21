@@ -29,7 +29,8 @@ main{
 }
 
 .wrapper{
-    max-width: 420px;
+    max-width: 350px;
+    height: 374px;
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
@@ -42,7 +43,7 @@ main{
     height: 100px;
     border: 6px solid white;
     margin-top: -52px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .content h1{
@@ -61,14 +62,15 @@ main{
 .content p{
     color: var(--Dark-grayish-blue);
     font-size: 0.9rem;
+    margin-bottom: 20px;
 }
 
 footer{
     display: flex;
     justify-content: space-around;
     border-top: 1px solid hsla(227, 10%, 46%, 0.2);
-    padding: 30px 0px;
-    margin-top: 30px;
+    padding: 20px 0px;
+    margin-top: 10px;
 }
 
 footer h2{
