@@ -1,0 +1,157 @@
+:root{
+    --Purple-50: hsl(260, 100%, 95%);
+    --Purple-300: hsl(264, 82%, 80%);
+    --Purple-500: hsl(263, 55%, 52%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-100: hsl(214, 17%, 92%);
+    --Grey-200: hsl(0, 0%, 81%);
+    --Grey-400: hsl(224, 10%, 45%);
+    --Grey-500: hsl(217, 19%, 35%);
+    --Dark-blue: hsl(219, 29%, 14%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body{
+    background-color: var(--Grey-100);
+    padding: 40px 30px;
+    height: auto;
+}
+
+article{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "a"
+    "b"
+    "c"
+    "d"
+    "e";
+    gap: 30px;
+}
+
+section{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 10px;
+}
+
+#a{
+    grid-area: a;
+    background-color: var(--Purple-500);
+}
+
+#b{
+    grid-area: b;
+    background-color: var(--Grey-500);
+}
+
+#c{
+    grid-area: c;
+    background-color: var(--White);
+}
+
+#d{
+    grid-area: d;
+    background-color: var(--Dark-blue);
+}
+
+#e{
+    grid-area: e;
+    background-color: var(--White);
+}
+
+h1{
+    color: var(--White);
+    font-weight: 600;
+    font-size: 1.95rem;
+    line-height: 1.3;
+}
+
+p{
+    line-height: 1.5;
+    color: var(--White);
+    font-size: 1.33rem;
+}
+
+img{
+    border-radius: 50%;
+    width: 40px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+h3{
+    color: var(--White);
+    font-weight: 500;
+    margin-bottom: 3px;
+    font-size: 1.2rem;
+}
+
+.white-block-name{
+    color: var(--Grey-500);
+}
+
+.white-block-title{
+    color: var(--Grey-400);
+}
+
+h4{
+    color: var(--White);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.h1-white{
+    color: var(--Dark-blue);
+}
+
+.p-gray{
+    color: var(--Grey-400);
+}
+
+.img-dark{
+    border: solid 2.5px var(--Purple-300);
+}
+
+@media (min-width:768px){
+    article{
+        grid-template-columns: minmax(250px, auto) minmax(250px, auto);
+        grid-template-rows: repeat(4, minmax(1fr, auto));
+        grid-template-areas: 
+        "a b"
+        "a d"
+        "c d"
+        "e e";
+    }
+}
+
+@media (min-width:1100px){
+    article{
+        grid-template-columns: repeat(4, minmax(200px, auto));
+        grid-template-rows: repeat(2, minmax(200px, auto));
+        grid-template-areas: 
+        "a a b e"
+        "c d d e";
+    } 
+
+    #a{
+        background-image: url(./images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: 80% 5%;
+    }
+}

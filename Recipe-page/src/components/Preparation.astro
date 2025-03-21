@@ -1,0 +1,28 @@
+---
+const tiempos = [
+  {
+    title: "Total: ",
+    text: "Approximately 10 minutes"
+  },
+  {
+    title: "Preparation: ",
+    text: "5 minutes"
+  },
+  {
+    title: "Cooking: ",
+    text: "5 minutes"
+  }
+]
+---
+
+<section id="preparation" class="mt-9 p-5.5 mx-1">
+    <h3 class="pb-2">Preparation time</h3>
+    <ul id="preparation-list">
+      {
+        tiempos.map((tiempo) => {
+          return <li class="py-2 pl-3"><strong class="pl-3">{tiempo.title}</strong>{tiempo.text}</li>
+        })
+      }
+    </ul>
+    
+  </section>

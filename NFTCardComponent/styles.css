@@ -1,0 +1,176 @@
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--Very-dark-blue-main);
+}
+
+main{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 350px;
+    background-color: var(--Very-dark-blue-card);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 20px 30px hsl(218, 58%, 10%), -20px 30px hsl(218, 58%, 10%), 50px 60px hsl(217, 45%, 11%), -50px -30px hsl(217, 45%, 11%), -50px 60px hsl(217, 45%, 11%), 50px -30px hsl(217, 45%, 11%);
+}
+
+.main-img{
+    position: relative;
+    width: 100%;
+    max-width: 20rem;
+    height: 17.5rem;
+    background-image: url(images/image-equilibrium.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.main-img::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: inherit;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.main-img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    background-image: url('images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.main-img:hover::after,
+.main-img:hover::before{
+    opacity: 1;
+}
+
+article{
+    margin-top: 5px;
+}
+
+.user-data{
+    border-top: 1px solid hsla(215, 51%, 70%, 0.2);
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-data img{
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.user-data p{
+    color: var(--Soft-blue);
+    font-weight: 400;
+}
+
+.user-data p span{
+    color: var(--White);
+    cursor: pointer;
+}
+
+.user-data p span:hover{
+    color: var(--Cyan);
+}
+
+.data{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.data h1{
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.data h1:hover{
+    color: var(--Cyan);
+    width: auto;
+}
+
+.data h2{
+    color: var(--Soft-blue);
+    font-weight: 300;
+    font-size: 1.03rem;
+    line-height: 1.5;
+}
+
+.numbers{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.eth{
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.eth img{
+    width: 15px;
+}
+
+.days{
+    color: var(--Soft-blue);
+    font-weight: 400;
+}
+
+.days img{
+    width: 20px;
+    height: 20px;
+}

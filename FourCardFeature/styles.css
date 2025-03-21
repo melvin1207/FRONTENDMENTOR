@@ -1,0 +1,154 @@
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Grey-500: hsl(234, 12%, 34%);
+    --Grey-400: hsl(212, 6%, 44%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body{
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    height: auto;
+    padding: 3.5vw;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.title-section{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1{
+    color: var(--Grey-400);
+    font-weight: 400;
+    font-size: calc(1rem + 2.6vw);
+}
+
+h2{
+    color: var(--Grey-500);
+    font-weight: 600;
+    font-size: calc(1rem + 3vw);
+}
+
+.title-section > p{
+    color: var(--Grey-400);
+    font-weight: 200;
+    font-size: calc(1rem + 0.3vw);
+}
+
+article{
+    margin-top: 60px;
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "a"
+    "b"
+    "c"
+    "d";
+}
+
+.card{
+    width: 90%;
+    max-width: 600px;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px var(--Grey-400);
+}
+
+.color{
+    width: 100%;
+    height:7px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.section-card1{
+    grid-area: a;
+}
+
+.section-card2{
+    grid-area: b;
+}
+
+.section-card3{
+    grid-area: c;
+}
+
+.section-card4{
+    grid-area: d;
+}
+
+.card-1{
+    background-color: var(--Cyan);
+}
+
+.card-2{
+    background-color: var(--Red);
+}
+
+.card-3{
+    background-color: var(--Orange);
+}
+
+.card-4{
+    background-color: var(--Blue);
+}
+
+.card-content{
+    padding: 20px;
+}
+
+h3{
+    color: var(--Grey-500);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.card-content > p{
+    color: var(--Grey-400);
+    font-weight: 200;   
+    margin-bottom: 25px;
+}
+
+.card-content > img{
+    display: block;
+    width: max-content;
+    margin-left: auto;
+}
+
+@media (min-width: 768px){
+    article{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+        ". a a ."
+        "b b c c"
+        ". d d .";
+    }
+}
+
+@media (min-width: 1000px){
+    article{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        ". b ."
+        "a b d"
+        "a c d"
+        ". c .";
+    }
+}
+

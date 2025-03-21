@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Melvin | Product preview card component</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,700,50;1,9..144,700,50&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article>
+    <picture>
+      <source media="(min-width: 500px)" srcset="./images/image-product-desktop.jpg">
+      <img id="main-img" src="./images/image-product-mobile.jpg" alt="Imagen de perfume">
+    </picture>
+
+    <section>
+      <h2 id="product" class="font1">PERFUME</h2>
+
+      <h1 id="title" class="font2">Gabrielle Essence Eau De Parfum</h1>
+      
+      <p id="description" class="font1">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+
+      <div>
+        <p id="sale" class="font2">$149.99</p>
+        <p id="price" class="font1"> $169.99</p>
+      </div>
+    
+      <button class="font1">
+        <img src="./images/icon-cart.svg" alt="">
+        Add to Cart
+      </button>
+    </section>
+  </article>
+</body>
+</html>
