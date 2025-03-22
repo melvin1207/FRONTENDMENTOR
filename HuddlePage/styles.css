@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --poppins: "Poppins", sans-serif;
+    --open-sans:  "Open Sans", sans-serif;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--poppins);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+body{
+    background-color: var(--Violet);
+    background-image: url(images/bg-mobile.svg);
+    background-position-x: center;
+    background-position-y: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "a"
+    "b";
+}
+
+.hero{
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.logo{
+    width: 48%;
+}
+
+.main-img{
+    width: 100%;
+}
+
+
+.text-area{
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+}
+
+h1{
+    font-weight: 600;
+    line-height: 36px;
+    font-size: 24px;
+    color: white;
+}
+
+.text-area p{
+    font-family: var(--open-sans);
+    color: white;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+button{
+    margin: auto;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    box-shadow: 0px 2px 2px black;
+    width: 70%;
+    color: var(--Violet);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+
+.icons{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+svg{
+    width: 38px;
+    height: 38px;
+    fill: white;
+    padding: 9px;
+    border: solid 2px white;
+    border-radius: 50%;
+}
+
+svg:hover{
+    fill: var(--Soft-Magenta);
+    border-color: var(--Soft-Magenta);
+}
+
+@media (min-width: 1000px) {
+    body{
+        height: 100vh;
+        background-color: var(--Violet);
+        background-image: url(images/bg-desktop.svg);
+        padding: 60px;
+        grid-template-columns: 52% 48%;
+        grid-template-areas: 
+        "a b";
+        gap: 50px;
+    }
+    
+    .hero{
+        gap: 60px;
+    }
+    
+    .logo{
+        width: 25%;
+    }   
+
+    .text-area{
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    h1{
+        font-weight: 600;
+        line-height: 60px;
+        font-size: 40px;
+        color: white;
+        margin-bottom: 25px;
+    }
+    
+    .text-area p{
+        line-height: 27px;
+        font-size: 18px;
+    }
+    
+    button{
+        margin-top: 30px;
+        margin-left: 0;
+        margin-bottom: 130px;
+        height: 60px;
+        border-radius: 30px;
+        left: 0;
+        width: 40%;
+    }
+    
+    .icons{
+        margin-left: auto;
+        gap: 15px;
+    } 
+}
