@@ -1,0 +1,58 @@
+@use 'variables' as colors;
+
+.footer-content{
+    margin-top: -28px;
+    background-image: linear-gradient(colors.$cyan-600-transparent, colors.$cyan-600-transparent), url(../assets/mobile/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: inherit;
+    text-align: center;
+    padding: 64px 32px;
+
+    .footer-title{
+        color: colors.$White;
+        font-weight: 900;
+        font-size: 2.5rem;
+        margin-bottom: 24px;
+        line-height: 110%;
+    }
+
+    .footer-text{
+        color: colors.$White;
+        font-weight: 600;
+        line-height: 150%;
+        font-size: 1.2rem;
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 650px){
+    .footer-content{
+        background-image: linear-gradient(colors.$cyan-600-transparent, colors.$cyan-600-transparent), url(../assets/tablet/image-footer.jpg);
+        padding: 64px 150px;
+    }
+}
+
+@media (min-width: 1000px){
+    .footer-content{
+        background-image: linear-gradient(colors.$cyan-600-transparent, colors.$cyan-600-transparent), url(../assets/desktop/image-footer.jpg);
+        padding: 112px 130px;
+        display: flex;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .footer-title{
+        width: 35%;
+        text-align: left;
+    }
+
+    .footer-text{
+        text-align: left;
+        width: 30%;
+    }
+}
+
+
+
+    

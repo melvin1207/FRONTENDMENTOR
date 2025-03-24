@@ -1,0 +1,100 @@
+@use 'variables' as colors;
+
+main{
+    padding: 64px 32px;
+}
+
+.images{
+    margin-top: 64px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: 
+    "a b"
+    "c d";
+
+    .image-1{
+        grid-area: a;
+    }
+
+    .image-2{
+        grid-area: b;
+    }
+
+    .image-3{
+        grid-area: c;
+    }
+
+    .image-4{
+        grid-area: d;
+    }
+
+
+    img{
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+.main-content{
+    margin-top: 64px;
+    text-align: center;
+
+    h1{
+        font-size: 0.95rem;
+        margin-bottom: 16px;
+        color: colors.$cyan-600;
+        letter-spacing: 4px;
+        font-weight: 800;
+    }
+
+    h2{
+        font-size: 2.3rem;
+        font-weight: 800;
+        color: colors.$slate-900;
+        margin-bottom: 32px;
+    }
+
+
+    p{
+        color: colors.$slate-600;
+        line-height: 150%;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 650px){
+    .images{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1;
+        grid-template-areas: 
+        "a b c d"
+    }
+
+    .main-content{    
+        padding-left: 130px;
+        padding-right: 130px;
+
+        h1{
+            font-size: 1.2rem;
+        }
+    
+        h2{
+            font-size: 2.8rem;
+        }
+    
+    
+        p{
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media (min-width: 1000px){
+    .main-content{    
+        padding-left: 450px;
+        padding-right: 450px;
+    }
+}

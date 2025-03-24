@@ -1,0 +1,39 @@
+@use 'variables' as colors;
+
+@mixin button($backgroundColor, $backgroundHover, $strongColor){
+    background-color: $backgroundColor;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: colors.$White;
+    border: none;
+    padding: 20px 60px;
+    border-radius: 40px;
+
+    strong{
+        color: $strongColor;
+        font-weight: 800;
+    }
+
+    &:hover{
+        background-color: $backgroundHover;
+        transition: 0.5s ease-in-out;
+    }
+
+    &:not(:hover){
+        background-color: $backgroundColor;
+        transition: 0.3s ease-in;
+    }
+}
+
+
+.button-violet-footer{
+    @include button(colors.$purple-600, colors.$purple-300, colors.$purple-300-hover);
+}
+
+.button-violet{
+    @include button(colors.$purple-600, colors.$purple-300, colors.$purple-300);
+}
+
+.hero-button{
+    @include button(colors.$cyan-600, colors.$cyan-300, colors.$cyan-300-hover-button);
+}
