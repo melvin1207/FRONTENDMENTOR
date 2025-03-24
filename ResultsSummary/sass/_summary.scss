@@ -1,0 +1,102 @@
+@use 'variables' as vari;
+
+.summary{
+    grid-area: b;
+    padding: 30px;
+    
+    h5{
+        font-weight: 800;
+        color: vari.$Dark-gray-blue;
+        padding-bottom: 24px;
+        font-size: 0.9rem;
+    }
+
+    button{
+        font-size: 1rem;
+        font-weight: 800;
+        background-color: vari.$Dark-gray-blue;
+        width: 100%;
+        color: vari.$White;
+        height: 56px;
+        border-radius: 128px;
+        border: none;
+        margin-top: 24px;
+    }
+}
+
+#items{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+    @mixin item($backgroundColor){
+        padding: 16px;
+        display: flex;
+        background-color: $backgroundColor;
+        border-radius: 12px;
+        font-size: 0.9rem;
+        align-items: center;     
+    }
+
+    @mixin color-title($color){
+        font-weight: 600;
+        color: $color;
+    }
+
+    .color-items{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        height: 21px;
+    }
+
+    p{
+        height: 21px;
+        font-weight: 700;
+        color: hsla(224, 30%, 27%, 50%);
+        margin-left: auto;
+    }
+
+    strong{
+        font-weight: 700;
+        color: vari.$Dark-gray-blue;
+        padding-right: 5px
+    }
+
+    #item-1{
+        @include item(hsl(0, 22%, 95%));
+
+        h1{
+            @include color-title(vari.$Light-red);
+        }
+    }
+
+    #item-2{
+        @include item(hsl(40, 60%, 95%));
+
+        h1{
+            @include color-title(vari.$Orangey-yellow);
+        }
+    }
+
+    #item-3{
+        @include item(hsl(162, 71%, 95%));
+
+        h1{
+            @include color-title(vari.$Green-teal);
+        }
+    }
+
+    #item-4{
+        @include item(hsl(234, 85%, 95%));
+
+        h1{
+            @include color-title(vari.$Cobalt-blue);
+        }
+    }
+
+    img{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}

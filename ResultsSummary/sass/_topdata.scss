@@ -1,0 +1,86 @@
+@use 'variables' as vari;
+
+.main-result{
+    background-image: linear-gradient(vari.$Light-slate-blue-background, vari.$Light-royal-blue-background);
+    grid-area: a;
+    background-color: vari.$Light-slate-blue-background;
+    padding: 24px 58px 40px 58px;
+    text-align: center;
+    color: vari.$White;
+    border-radius: 0px 0px 32px 32px;
+
+    .title{
+        font-size: 1rem;
+        color: vari.$Light-lavender;
+        margin-bottom: 24px;
+    }
+
+    .circle-result{
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        margin: 0 auto;
+        background-image: linear-gradient(vari.$Violet-blue-circle, vari.$Persian-blue-circle);
+        text-align: center;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-size: 3rem;
+        }
+
+        h2{
+            color: vari.$Light-lavender;
+            font-weight: 400;
+            font-size: 0.9rem;
+        }
+    }
+
+
+    .text-area{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1{
+            font-size: 1.3rem;
+        }
+
+        p{
+            font-size: 0.9rem;
+            color: vari.$Light-lavender;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .main-result{
+        border-radius: inherit;
+        padding: 38px 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title{
+            font-size: 1.4rem;
+        }
+
+        .circle-result{
+            width: 200px;
+            height: 200px;
+
+            h1{
+                font-size: 4rem;
+            }
+        }
+
+        .text-area{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}

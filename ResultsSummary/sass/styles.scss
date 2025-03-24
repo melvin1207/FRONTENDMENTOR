@@ -1,0 +1,51 @@
+@use 'variables' as vari;
+@use 'summary';
+@use 'topdata';
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    background-color: vari.$Pale-blue;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    background-color: vari.$White;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "a"
+    "b";
+}
+
+@media (min-width: 768px){
+    body{
+        height: 100vh;
+    }
+
+    main{
+        max-height: 512px;
+        width: 736px;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: 
+        "a b";
+        border-radius: 32px;
+    }
+}
+
+
+

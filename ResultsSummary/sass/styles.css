@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+.summary {
+  grid-area: b;
+  padding: 30px;
+}
+.summary h5 {
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+  padding-bottom: 24px;
+  font-size: 0.9rem;
+}
+.summary button {
+  font-size: 1rem;
+  font-weight: 800;
+  background-color: hsl(224, 30%, 27%);
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  height: 56px;
+  border-radius: 128px;
+  border: none;
+  margin-top: 24px;
+}
+
+#items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#items .color-items {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 21px;
+}
+#items p {
+  height: 21px;
+  font-weight: 700;
+  color: hsla(224, 30%, 27%, 0.5);
+  margin-left: auto;
+}
+#items strong {
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+  padding-right: 5px;
+}
+#items #item-1 {
+  padding: 16px;
+  display: flex;
+  background-color: hsl(0, 22%, 95%);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  align-items: center;
+}
+#items #item-1 h1 {
+  font-weight: 600;
+  color: hsl(0, 100%, 67%);
+}
+#items #item-2 {
+  padding: 16px;
+  display: flex;
+  background-color: hsl(40, 60%, 95%);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  align-items: center;
+}
+#items #item-2 h1 {
+  font-weight: 600;
+  color: hsl(39, 100%, 56%);
+}
+#items #item-3 {
+  padding: 16px;
+  display: flex;
+  background-color: hsl(162, 71%, 95%);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  align-items: center;
+}
+#items #item-3 h1 {
+  font-weight: 600;
+  color: hsl(166, 100%, 37%);
+}
+#items #item-4 {
+  padding: 16px;
+  display: flex;
+  background-color: hsl(234, 85%, 95%);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  align-items: center;
+}
+#items #item-4 h1 {
+  font-weight: 600;
+  color: hsl(234, 85%, 45%);
+}
+#items img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.main-result {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  grid-area: a;
+  background-color: hsl(252, 100%, 67%);
+  padding: 24px 58px 40px 58px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  border-radius: 0px 0px 32px 32px;
+}
+.main-result .title {
+  font-size: 1rem;
+  color: hsl(241, 100%, 89%);
+  margin-bottom: 24px;
+}
+.main-result .circle-result {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  text-align: center;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-result .circle-result h1 {
+  font-size: 3rem;
+}
+.main-result .circle-result h2 {
+  color: hsl(241, 100%, 89%);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.main-result .text-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main-result .text-area h1 {
+  font-size: 1.3rem;
+}
+.main-result .text-area p {
+  font-size: 0.9rem;
+  color: hsl(241, 100%, 89%);
+}
+
+@media (min-width: 768px) {
+  .main-result {
+    border-radius: inherit;
+    padding: 38px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-result .title {
+    font-size: 1.4rem;
+  }
+  .main-result .circle-result {
+    width: 200px;
+    height: 200px;
+  }
+  .main-result .circle-result h1 {
+    font-size: 4rem;
+  }
+  .main-result .text-area p {
+    font-size: 1rem;
+  }
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: hsl(221, 100%, 96%);
+  display: flex;
+  align-items: center;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "a" "b";
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  main {
+    max-height: 512px;
+    width: 736px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "a b";
+    border-radius: 32px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
