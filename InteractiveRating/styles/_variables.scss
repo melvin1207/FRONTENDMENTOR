@@ -1,0 +1,25 @@
+//Colores
+$Orange-500: hsl(25, 97%, 53%);
+$White: hsl(0, 100%, 100%);
+$Grey-500: hsl(217, 12%, 63%);
+$Grey-900: hsl(213, 19%, 18%);
+$Grey-950: hsl(216, 12%, 8%);
+
+//Espacios
+$spacing-100: 8px;
+$spacing-200: 16px;
+$spacing-300: 24px;
+$spacing-400: 32px;
+$spacing-500: 40px;
+$spacing-1300: 104px;
+$spacing-1700: 136px;
+
+//mixins para los textos
+@mixin fonts($size, $lineHeight, $weight: 400, $letterSpacing, $color){
+    font-size: $size;
+    line-height: $lineHeight;
+    font-weight: $weight;
+    letter-spacing: $letterSpacing;
+    color: $color;
+}
+

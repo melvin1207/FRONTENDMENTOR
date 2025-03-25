@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+.rate picture {
+  width: calc(35px + 1vw);
+  height: calc(35px + 1vw);
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rate h1 {
+  font-size: calc(1rem + 1vw);
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: white;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+.rate .rate-text {
+  font-size: calc(0.9rem + 0.2vw);
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 8px;
+}
+.rate .ratings {
+  display: flex;
+  justify-content: space-between;
+}
+.rate .ratings .rating {
+  font-size: calc(0.9rem + 0.2vw);
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 1.87px;
+  color: hsl(217, 12%, 63%);
+  width: calc(2.5rem + 1vw);
+  height: calc(2.5rem + 1vw);
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 50%;
+  text-align: center;
+}
+.rate .ratings .rating:hover {
+  background-color: white;
+  color: hsl(213, 19%, 18%);
+  cursor: pointer;
+}
+.rate .ratings .selected {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(213, 19%, 18%);
+}
+.rate .ratings .error {
+  border: 2px solid red;
+}
+.rate button {
+  margin-top: 24px;
+  font-size: calc(0.9rem + 0.2vw);
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 1.87px;
+  color: hsl(213, 19%, 18%);
+  background-color: hsl(25, 97%, 53%);
+  height: 45px;
+  border: none;
+  width: 100%;
+  border-radius: 22.5px;
+}
+.rate button:hover {
+  background-color: white;
+  color: hsl(213, 19%, 18%);
+  cursor: pointer;
+}
+
+.thanks {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.thanks img {
+  width: 50%;
+  margin-bottom: 24px;
+}
+.thanks h2 {
+  font-size: calc(0.9rem + 0.2vw);
+  line-height: 0px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 18%);
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  border-radius: 50px;
+}
+.thanks h1 {
+  font-size: calc(1rem + 1vw);
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: white;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.thanks p {
+  text-align: center;
+  font-size: calc(0.9rem + 0.2vw);
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: hsl(217, 12%, 63%);
+}
+
+html {
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  margin: 0 auto;
+  background-image: radial-gradient(circle at top, #232A34, #181E27);
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 412px;
+  min-height: 360px;
+  max-height: 416px;
+  padding: 24px;
+}
+
+/*# sourceMappingURL=styles.css.map */

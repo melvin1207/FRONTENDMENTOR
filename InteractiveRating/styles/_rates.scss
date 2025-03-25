@@ -1,0 +1,70 @@
+@use 'variables' as variant;
+
+.rate{
+    picture{
+        width: calc(35px + 1vw);
+        height: calc(35px + 1vw);
+        border-radius: 50%;
+        background-color: variant.$Grey-900;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1{
+        @include variant.fonts(calc(1rem +  1vw), 30px, 700, 0px, white);
+        padding-top: variant.$spacing-300;
+        padding-bottom: variant.$spacing-200;
+    }
+
+    .rate-text{
+        @include variant.fonts(calc(0.9rem + 0.2vw), 22px, 400, 0px, variant.$Grey-500);
+        margin-bottom: variant.$spacing-100;
+    }
+
+    .ratings{
+        display: flex;
+        justify-content: space-between;
+
+        .rating{
+            @include variant.fonts(calc(0.9rem + 0.2vw), 18px, 700, 1.87px, variant.$Grey-500);
+            width: calc(2.5rem + 1vw);
+            height: calc(2.5rem + 1vw);
+            background-color: variant.$Grey-900;
+            border-radius: 50%;
+            text-align: center;
+
+            &:hover{
+                background-color: white;
+                color: variant.$Grey-900;
+                cursor: pointer;
+            }
+        }
+
+        .selected{
+            background-color: variant.$Orange-500;
+            color: variant.$Grey-900;
+        }
+
+        .error{
+            border: 2px solid red;
+        }
+    }
+
+    button{
+        margin-top: variant.$spacing-300;
+        @include variant.fonts(calc(0.9rem + 0.2vw), 18px, 700, 1.87px, variant.$Grey-900);
+        background-color: variant.$Orange-500;
+        height: 45px;
+        border: none;
+        width: 100%;
+        border-radius: 22.5px;
+
+        &:hover{
+            background-color: white;
+            color: variant.$Grey-900;
+            cursor: pointer;
+        }
+    }
+}
+
