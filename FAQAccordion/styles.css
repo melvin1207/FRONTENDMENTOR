@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: #f9f0ff;
+    --Grayish-purple: #8c6991;
+    --Dark-purple: hsl(292, 42%, 14%);
+    --Bright-pink:hsl( 281, 83%, 54%);
+}
+
+html{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    background-color: var(--Grayish-purple);
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: top;
+    padding: 142.4px 0px;
+}
+
+main{
+    background-color: var(--White);
+    width: 90%;
+    max-width: 565px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.description > img{
+    width: calc(15px + 3vw);
+}
+
+.description > h1{
+    font-size: calc(2rem + 2vw);
+    font-weight: 700;
+}
+
+details{
+    padding: 20px 0px;
+    border-bottom: 2px solid var(--Light-pink);
+    transition: max-height 400ms ease-out;
+    overflow: hidden;
+}
+
+summary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+summary:hover h2{
+    color: var(--Bright-pink);
+}
+
+summary > h2{
+    width: 88%;
+    font-weight: 600;
+    font-size: calc(0.75rem + 1vw);
+    color: var(--Dark-purple);
+}
+
+p{
+    padding-top: 20px;
+    font-size: calc(0.72rem + 1vw);
+    color: var(--Grayish-purple);
+    line-height: 1.5;
+}
+
+.mas{
+    width: calc(1.5rem + 1vw);
+    height: calc(1.5rem + 1vw);
+}
+
+.menos{
+    display: none;
+    width: calc(1.5rem + 1vw);
+    height: calc(1.5rem + 1vw);
+}
+
+@media (min-width: 768px){
+    body{
+        background-image: url(./assets/images/background-pattern-desktop.svg);
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    summary > h2{
+        width: 95%;
+        font-size: 1.1rem;
+    }
+
+    p{
+        font-size: 1rem;
+        width: 95%;
+    }
+}

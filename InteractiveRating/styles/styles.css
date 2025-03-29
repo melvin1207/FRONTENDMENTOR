@@ -42,9 +42,13 @@
   text-align: center;
 }
 .rate .ratings .rating:hover {
+  transition: backgorund-color 0.2s ease-in-out;
   background-color: white;
   color: hsl(213, 19%, 18%);
   cursor: pointer;
+}
+.rate .ratings .rating:not(:hover) {
+  transition: background-color 0.9s ease-in-out;
 }
 .rate .ratings .selected {
   background-color: hsl(25, 97%, 53%);

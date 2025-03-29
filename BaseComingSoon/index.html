@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Melvin| Base Apparel coming soon page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <img class="logo" src="./images/logo.svg" alt="Logo">
+
+  <picture class="hero-container">
+    <source media="(min-width: 1000px)" srcset="./images/hero-desktop.jpg">
+    <img class="hero-container__img" src="./images/hero-mobile.jpg" alt="Hero Image">
+  </picture>
+
+  <section class="content">
+    <h1 class="content__title">
+      <span class="content__title__color">We´re</span> 
+      coming soon
+    </h1>
+
+    <p class="content__text">
+      Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+    </p>
+
+    <div class="content__email-block">
+
+      <input type="text" class="content__email-block__input" placeholder="Email Address">
+      <button class="content__email-block__btn">
+        <img src="./images/icon-arrow.svg" alt="Flecha" class="content__email-block__btn__img">
+      </button>
+      <p class="content__email-block-text--error">Please provide a valid email</p>
+      <img src="images/icon-error.svg" alt="Error" class="content__email-block-text__icon">
+    </div>
+  </section>
+</body>
+</html>

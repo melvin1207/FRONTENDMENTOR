@@ -35,9 +35,14 @@
             text-align: center;
 
             &:hover{
+                transition: backgorund-color 0.2s ease-in-out;
                 background-color: white;
                 color: variant.$Grey-900;
                 cursor: pointer;
+            }
+
+            &:not(:hover){
+                transition: background-color 0.9s ease-in-out;
             }
         }
 

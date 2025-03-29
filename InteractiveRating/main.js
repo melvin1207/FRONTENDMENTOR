@@ -29,7 +29,7 @@ button.addEventListener('click', (e) => {
         thanks.style.display = "flex"
         setTimeout(() => {
             location.reload()
-        }, 3000)
+        }, 2000)
         
     }
 })

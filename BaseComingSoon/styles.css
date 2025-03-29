@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --Desaturated-Red: #ce9898;
+    --Soft-Red: #f96262;
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+    /*135deg*/
+    --gradient1-1: #ffffff;
+    --gradient1-2: #fff5f5;
+    --gradient2-1: #f8bfbf;
+    --gradient2-2: #ee8b8b;
+}
+
+html{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+}
+
+.logo{
+    grid-area: a;
+    padding: 2.3rem 0px 2.3rem 2.3rem;
+    width: 10rem;
+}
+
+
+.hero-container__img{
+    width: 100%;
+}
+
+.content{
+    padding: 64px 32px 92px 32px;
+    text-align: center;
+    background-image: linear-gradient(135deg, var(--gradient1-1), var(--gradient1-2));
+}
+
+.content__title{
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Red);
+    margin-bottom: 16px;
+}
+
+.content__title__color{
+    color: var(--Soft-Red);
+    font-weight: 300;
+    display: block;
+}
+
+.content__text{
+    color: var(--Soft-Red);
+    line-height: 22px;
+    margin-bottom: 32px;
+}
+
+.content__email-block{
+    position: relative;
+}
+
+.content__email-block__input{
+    height: 3rem;
+    width: 96%;
+    border-radius: 60px;
+    border: 1px solid var(--Desaturated-Red);
+    font-size: 0.9rem;
+    line-height: 1.2;
+    padding-left: 20px;
+    color: #ce9898;
+}
+
+.content__email-block__input:focus{
+    outline: none;
+    color: #ce9898;
+}
+
+.content__email-block__input::placeholder{
+    color: var(--Desaturated-Red);
+}
+
+.content__email-block__btn{
+    height: 3rem;
+    width:  4rem;
+    border-radius: 28px;
+    border: none;
+    background-image: linear-gradient(135deg, var(--gradient2-1), var(--gradient2-2));
+    box-shadow: 0px 15px 20px hsla(0, 44%, 60%, 0.247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 4rem);
+}
+
+.content__email-block__input--error{
+    border: 2px solid #F96464;
+}
+
+.content__email-block-text--error{
+    display: none;
+    color: #F96464;
+    font-weight: 600;
+    margin-left: -65px;
+    margin-top: 10px;
+}
+
+.content__email-block-text__icon{
+    display: none;
+    position: absolute;
+    top: 0.7rem;
+    left: calc(100% - 6rem);
+}
+
+@media (768px <= width){
+    .logo{
+        grid-area: a;
+        margin: 20px 0px 0px 60px;
+        width: 19rem;
+    }
+    
+    .content__title{
+        font-size: 5rem;
+    }
+    
+    .content__title__color{
+        display: inline;
+    }
+    
+    .content__text{
+        font-size: 1.3rem;
+    }
+    
+    .content__email-block__input{
+        height: 4rem;
+        width: 60%;
+        font-size: 1.1rem;
+    }
+    
+    .content__email-block__btn{
+        height: 4rem;
+        width:  5.5rem;
+        border-radius: 35px;
+        left: calc(80% - 4rem);
+    }
+
+    .content__email-block-text--error{
+        margin-left: -12rem;
+    }
+
+    .content__email-block-text__icon{
+        top: 1.2rem;
+        left: calc(80% - 6rem);
+    }
+}
+
+@media (1000px <= width){
+    body{
+        background-image: url(images/bg-pattern-desktop.svg), linear-gradient(135deg, var(--gradient1-1), var(--gradient1-2));
+        background-repeat: no-repeat;
+        background-size: 65% 100vh;
+        max-height: 100vh;
+        grid-template-columns: 65% 35%;
+        grid-template-rows:20% 80%;
+        grid-template-areas: 
+        "a b"
+        "c b";
+    }
+    
+    .logo{
+        grid-area: a;
+        margin: 3.2rem 0px 0px 12rem;
+        width: 15rem;
+    }
+
+    .hero-container__img{
+        height: 99.5vh;
+        object-fit:fill;
+    }
+    
+    .content{
+        margin-left: 12rem;
+        text-align: left;
+        background-image: none;
+    }
+    
+    .content__title{
+        font-size: 4rem;
+        width: 50%;
+    }
+    
+    .content__text{
+        width: 73%;
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+    
+    .content__email-block__input{
+        height: 3.5rem;
+        width: 60%;
+    }
+
+    .content__email-block__btn{
+        height: 3.5rem;
+        width:  5.5rem;
+        left: calc(60% - 4rem);
+    }
+
+    .content__email-block-text--error{
+        margin-left:1.5rem;
+    }
+
+    .content__email-block-text__icon{
+        top: 1rem;
+        left: calc(60% - 6rem);
+    }
+}
