@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400..900&display=swap');
+
+:root{
+    --Very-Dark-Magenta: #502050;
+    --Soft-Pink: #ee68a4;
+    --Dark-Grayish-Magenta: #927b91;
+    --Light-Grayish-Magenta: #f7f2f7;
+    --White: hsl(0, 0%, 100%);
+}
+
+html{
+    font-size: 15px;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "League Spartan", sans-serif;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    padding: 82px 0;
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% auto, 100% auto;
+    background-position-x: 0, 0;
+    background-position-y: 0, 100%;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header{
+    padding-bottom: 2.6rem;
+    text-align: center;
+}
+
+.header__title{
+    color: var(--Very-Dark-Magenta);
+    line-height: 32px;
+    font-size: 2.9rem;
+    font-weight: 700;
+    letter-spacing: -1.4px;
+    margin-bottom: 1.1rem;
+}
+
+.header__text{
+    font-size: 1.3rem;
+    line-height: 25px;
+    letter-spacing: -0.6px;
+    color: var(--Dark-Grayish-Magenta);
+}
+
+.rates{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.02rem;
+    margin-bottom: 3.2rem;
+}
+
+.rates__rate{
+    width: 100%;
+    background-color: var(--Light-Grayish-Magenta);
+    height: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 8px;
+}
+
+.rates__rate__stars{
+    display: flex;
+    gap: 8px;
+}
+
+.rates__rate__text{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    font-size: 1.02rem;
+}
+
+.opinions{
+    display: flex;
+    flex-direction: column;
+    gap: 1.01rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.opinions__opinion{
+    background-color: #512051;
+    border-radius: 8px;
+    padding: 38px 32px;
+}
+
+.opinions__opinion__user{
+    display: flex;
+    gap: 23px;
+    align-items: center;
+    padding-bottom: 23px;
+}
+
+.opinions__opinion__user__img{
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+}
+
+.opinions__opinion__user__name{
+    color: var(--White);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.opinions__opinion__user__title{
+    color: var(--Soft-Pink);
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-top: 4px;
+}
+
+.opinions__opinion__text{
+    color: var(--White);
+    font-size: 1.25rem;
+    letter-spacing: -0.3px;
+    line-height: 22px;
+}
+
+@media (768px <= width){
+    .rates{
+        flex-direction: row;
+    }
+
+    .rates__rate{
+        height: 130px;
+    }
+}
+
+@media (1000px <= width){
+    body{
+        padding: 115px 165px;
+        height: 100vh;
+        background-image: url("images/bg-pattern-top-desktop.svg"),
+			url("images/bg-pattern-bottom-desktop.svg");
+		background-repeat: no-repeat, no-repeat;
+		background-position: top left, bottom right;
+		background-size: 50%, 75%;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-rows: 2;
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas: 
+        "a b"
+        "c c";
+    }
+    
+    .header{
+        grid-area: a;
+        padding-bottom: 0;
+        text-align: left;
+    }
+    
+    .header__title{
+        line-height: 48px;
+        font-size: 3.7rem;
+        letter-spacing: -2px;
+    }
+    
+    .header__text{
+        font-size: 1.3rem;
+        line-height: 25px;
+        letter-spacing: -0.6px;
+        color: var(--Dark-Grayish-Magenta);
+    }
+    
+    .rates{
+        grid-area: b;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .rates__rate{
+        width: 450px;
+        height: 56px;
+        flex-direction: row;
+        gap: 2.1rem;
+    }
+
+    .rates__rate--g2{
+        margin-left: 48px;
+    }
+
+    .rates__rate--g3{
+        margin-left: 96px;
+    }
+        
+    .rates__rate__text{
+        font-size: 1.05rem;
+    }
+    
+    .opinions{
+        grid-area: c;
+        margin-top: 71px;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    .opinions__opinion{
+        padding: 35px 32px;
+    }
+    
+    #opinion2{
+        margin-top: 16px;
+    }
+
+    #opinion3{
+        margin-top: 32px;
+    }
+}
