@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700&display=swap');
+
+:root{
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%); 
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+html{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    background-image: url(images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: var(--Red);
+    padding:  88px 24px 68px 24px;
+}
+
+.description{
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.description__title{
+    font-weight: 700;
+    color: white;
+    font-size: 1.8rem;
+    line-height: 32px;
+    margin-bottom: 1rem;
+}
+
+.description__text{
+    font-size: 1rem;
+    line-height: 26px;
+    font-weight: 300;
+    color: white;
+}
+
+.trial{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.trial__text{
+    background-color: var(--Blue);
+    height: 5.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px hsla(0, 0%, 0%, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 66px;
+}
+
+.trial__text__title{
+    text-align: center;
+    color: white;
+    line-height: 1.55rem;
+    font-size: 0.95rem;
+}
+
+.trial__content{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px hsla(0, 0%, 0%, 0.14);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trial__content__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.trial__content__form__input{
+    width: 100%;
+    border: 1px solid var(--Grayish-Blue);
+    height: 3.5rem;
+    border-radius: 5px;
+    padding-left: 19px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.trial__content__form__input--error{
+    border: 2px solid var(--Red);
+    color: var(--Red);
+}
+
+.trial__content__form__input--error::placeholder{
+    color: var(--Red);
+}
+
+.text__error{
+    text-align: end;
+    color: var(--Red);
+    font-size: 0.6rem;
+    font-weight: 300;
+    font-style: italic;
+    padding-top: 2px;
+}
+
+div{
+    position: relative;
+}
+
+.icon__error{
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 87%;
+}
+
+
+.trial__content__form__btn{
+    background-color: var(--Green);
+    border: none;
+    height: 3.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.trial__content__form__btn:hover{
+    background-color: hsla(154, 59%, 51%, 0.538);
+}
+
+.trial__terms{
+    width: 80%;
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--Grayish-Blue);
+    margin-top: 8px;
+}
+
+.trial__terms__color{
+    color: var(--Red);
+    cursor: pointer;
+}
+
+@media (768px <= width){
+    body{
+        height: 100vh;
+        padding: 0 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .description__title{
+        font-size: 2rem;
+    }
+    
+    .description__text{
+        font-size: 1.3rem;
+    }
+    
+    .trial__text__title{
+        font-size: 1.2rem;
+    }
+    
+    .trial__content{
+        padding: 30px;
+    }
+    
+    .trial__content__form{
+        gap: 1.5rem;
+    }
+    
+    .trial__content__form__input{
+        font-size: 1rem;
+    }
+    
+    .icon__error{
+        left: 91%;
+    }
+    
+    .trial__content__form__btn{
+        font-size: 1.1rem;
+    }
+    
+    .trial__terms{
+        font-size: 0.8rem;
+    }
+}
+
+@media (1000px <= width) {
+    body{
+        padding: 121px 165px;
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .description{
+        text-align: left;
+        margin-bottom: 0;
+        width: 50%;
+    }
+    
+    .description__title{
+        font-size: 3.12em;
+        line-height: 55px;
+    }
+    
+    .description__text{
+        font-size: 1.1rem;
+        line-height: 26px;
+        font-weight: 300;
+        color: white;
+    }
+    
+    .trial{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 50%;
+    }
+    
+    .trial__text__title{
+        font-size: 0.95rem;
+    }
+
+    
+    .trial__content__form{
+        gap: 1.2rem;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Melvin | Intro component with sign up form</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="container">
+    <section class="description">
+      <h1 class="description__title">Learn to code by watching others</h1>
+      <h2 class="description__text">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+      </h2>
+    </section>
+    
+    <section class="trial"> 
+      <article class="trial__text">
+        <p class="trial__text__title">
+          <strong class="trial__text__title__color">Try it free 7 days </strong>
+          then $20/mo. thereafter
+        </p>
+      </article>
+
+      <article class="trial__content">
+        <form class="trial__content__form">
+          <div>
+            <input type="text" placeholder="First Name" class="trial__content__form__input" name="First name">
+            <img src="./images/icon-error.svg" alt="Error" class="icon__error">
+          </div>
+          
+          <div>
+            <input type="text" placeholder="Last Name" class="trial__content__form__input" name="Last name">
+            <img src="./images/icon-error.svg" alt="Error" class="icon__error">
+          </div>
+
+          <div>
+            <input type="text" placeholder="Email Address" class="trial__content__form__input" name="Email">
+            <img src="./images/icon-error.svg" alt="Error" class="icon__error">
+          </div>
+
+          <div>
+            <input type="password" placeholder="Password" class="trial__content__form__input" name="Password">
+            <img src="./images/icon-error.svg" alt="Error" class="icon__error">
+          </div>
+          <button type="submit" class="trial__content__form__btn">CLAIM YOUR FREE TRIAL</button>
+        </form>
+
+        <P class="trial__terms">
+          By clicking the button, you are agreeing to our 
+          <strong class="trial__terms__color">Terms and Services</strong>
+        </P>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
