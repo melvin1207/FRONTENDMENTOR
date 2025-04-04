@@ -1,0 +1,66 @@
+@use '../utils/variables' as variables;
+@use '../utils/mixins' as mixins;
+
+.promotion{
+    background-color: variables.$orange;
+    margin: 0;
+    padding: variables.$spacing-600 variables.$spacing-250;
+}
+
+.promotion__title{
+    @include mixins.textPresent3(variables.$slate);
+    margin-bottom: variables.$spacing-300;
+}
+
+.promotion__text{
+    @include mixins.textPresent4(variables.$slate);
+    margin-bottom: variables.$spacing-500;
+}
+
+.price__content{
+    display: flex;
+    align-items: center;
+    margin-bottom: variables.$spacing-600;
+    gap: variables.$spacing-200;
+}
+
+.promotion__price{
+    @include mixins.textPresent4(variables.$slate);
+}
+
+.promotion__price__strong{
+    @include mixins.textPresent2(variables.$slate);
+}
+
+.promotion__btn__container{
+    display: flex;
+    flex-direction: column;
+    gap: variables.$spacing-200;
+    margin-bottom: variables.$spacing-800;
+}
+
+@media (min-width: 768px){
+    .promotion{
+        width: 55%;
+        border-radius: 16px;
+        padding: variables.$spacing-600;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+    }
+    
+    .promotion__btn__container{
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1000px){
+    .promotion{
+        width: 40%;
+        padding: variables.$spacing-700;
+        top: 15%;
+        left: 55.5%;
+    }
+    
+
+}

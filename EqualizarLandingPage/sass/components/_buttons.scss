@@ -1,0 +1,15 @@
+@use '../utils/mixins' as mixins;
+@use '../utils/variables' as variables;
+
+.promotion__btn__apple{
+    @include mixins.btn(variables.$slate, variables.$white, variables.$cyan)
+}
+
+.promotion__btn__android{
+    @include mixins.btn(variables.$white, variables.$slate, variables.$yellow)
+}
+
+.btn__image{
+    height: 20px;
+    width: 17px;
+}

@@ -1,0 +1,13 @@
+@use '../utils/variables' as variables;
+
+.footer__media__icon{
+    width: 20px;
+    height: 20px;
+    fill: variables.$slate;
+
+    &:hover{
+        scale: 1.5;
+        fill: variables.$orange;
+        transition: 0.3s ease-in-out;
+    }
+}

@@ -1,0 +1,58 @@
+@use '../utils/variables' as variables;
+@use '../utils/mixins' as mixins;
+
+.hero{
+    margin: variables.$spacing-800 variables.$spacing-250;
+}
+
+.hero__logo{
+    width: 144px;
+    margin-bottom: variables.$spacing-800;
+}
+
+.hero__description__title{
+    @include mixins.textPresent3(variables.$slate);
+    margin-bottom: variables.$spacing-500;
+}
+
+.hero__description__text{
+    @include mixins.textPresent5(variables.$slate);
+}
+
+@media (min-width: 768px){
+    .hero{
+        margin: variables.$spacing-800 44px;
+    }
+
+    .hero__description__title{
+        @include mixins.textPresent2(variables.$slate);
+        width: 60%;
+        margin-bottom: variables.$spacing-500;
+    }
+    
+    .hero__description__text{
+        @include mixins.textPresent4(variables.$slate);
+        width: 76.5%;
+    }
+}
+
+@media (min-width: 768px){
+    .hero{
+        margin: variables.$spacing-800 160px;
+    }
+    
+    .hero__logo{
+        margin-bottom: variables.$spacing-1600;
+    }
+    
+    .hero__description__title{
+        @include mixins.textPresent1(variables.$slate);
+        width: 80%;
+        margin-bottom: variables.$spacing-500;
+    }
+    
+    .hero__description__text{
+        @include mixins.textPresent4(variables.$slate);
+        width: 68%;
+    }
+}

@@ -1,0 +1,70 @@
+@use '../utils/variables' as variables;
+@use '../utils/mixins' as mixins;
+
+.footer{
+    margin: variables.$spacing-800 variables.$spacing-250 variables.$spacing-1000 variables.$spacing-250;
+    display: flex;
+    flex-direction: column;
+    gap: variables.$spacing-400;
+}
+
+.footer__data{
+    display: flex;
+    flex-direction: column;
+    gap: variables.$spacing-400;
+}
+
+.footer__logo{
+    width: 144px;
+}
+
+.footer__text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer__rights{
+    @include mixins.textPresent5(variables.$slate);
+    margin: 0;
+}   
+
+.footer__contactus{
+    @include mixins.textPresent5(variables.$slate);
+    margin: 0;
+}
+
+.footer__email{
+    @include mixins.textPresent5Bold(variables.$slate);
+}
+
+.footer__media{
+    display: flex;
+    gap: variables.$spacing-400;
+    width: auto;
+}
+
+@media (min-width: 768px){
+    .footer{
+        margin: 250px variables.$spacing-500 variables.$spacing-1000 variables.$spacing-500;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: variables.$spacing-400;
+    }
+}
+
+@media (min-width: 1120px){
+    .footer{
+        margin: 250px 160px variables.$spacing-1000 160px;
+    }
+
+    .footer__logo{
+        height: 32px;
+    }
+
+    .footer__data{
+        flex-direction: row;
+        gap: variables.$spacing-1600;
+    }
+}
