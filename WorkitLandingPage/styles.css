@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap');
+
+:root{
+    --green: #44ffa1;
+    --purple-900: #24053e;
+    --purpple-500: #584d62;
+    --purple-100: #fcf8ff;
+    --font-1: "Fraunces", serif;
+    --font-2: "Manrope", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: var(--font-1);
+}
+
+.hero{
+    background-color: var(--purple-900);
+    background-image: url(./assets/images/bg-pattern-1.svg), url(./assets/images/bg-pattern-2.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 75%, 60%;
+    background-position: top 25% left -180px, top 100% right -150px;
+    position: relative;
+}
+
+.hero::after {
+    border-radius: 40%;
+    height: 48px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: calc(100% - 24px);
+    background-color: var(--purple-900);
+    display: block;
+    content: "";
+}
+
+
+.hero__img{
+    position: absolute;
+    width: 80%;
+    z-index: 10;
+    top: calc(100% - 72px);
+    left: 10%;
+}
+
+.hero__access:hover{
+    transition: 0.3s ease-in-out;
+    color: var(--green);
+}
+
+.hero__access{
+    font-size: 1.14rem;
+    font-family: var(--font-2);
+    font-weight: 600;
+    text-decoration: underline solid var(--green) 3px;
+    text-underline-offset: 9px;
+}
+
+.hero__title_text{
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 110%;
+}
+
+.hero__title__strong{
+    font-weight: 400;
+    text-decoration: underline solid var(--green) 3px;
+    text-underline-offset: 9px;
+}
+
+/*DATA*/
+.data{
+    background-color: var(--purple-100);
+    position: relative;
+}
+
+.data::after {
+    border-radius: 40%;
+    height: 48px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: calc(100% - 24px);
+    background-color: var(--purple-100);
+    display: block;
+    content: "";
+}
+
+.data__number{
+    color: var(--purple-900);
+    width: 48px;
+    height: 48px;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.date__item-title{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--purple-900);
+    line-height: 120%;
+}
+
+.data-text{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--purple-900);
+    line-height: 180%;
+}
+
+
+/*Presentation*/
+.founder__image{
+    position: absolute;
+    left: 12%;
+}
+
+.founder__presentation{
+    background-color: var(--purple-900);
+}
+
+.founder__title{
+    font-size: 2rem;
+    font-weight: 350;
+    line-height: 120%;
+}
+
+.founder__text{
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 180%;
+}
+
+.btn{
+    background-color: var(--green);
+    color: var(--purple-900);
+    font-family: var(--font-2);
+    font-weight: 600;
+    border: 2px solid var(--green);
+}
+
+.btn:hover{
+    transition: 0.3s ease-in-out;
+    background-color: var(--purple-900);
+    color: var(--green);
+}
+
+
+
+/*Footer*/
+.footer__media__icon{
+    fill: var(--purpple-500);
+}
+
+.footer__media__icon:hover{
+    transition: 0.3s ease-in-out;
+    fill: var(--purple-900);
+    scale: 1.2;
+}
+
+@media (768px <= width){
+    .hero{
+        background-size: 45%, 23%;
+        background-position: top 25% left -230px, top 100% right -110px;
+    }
+    
+    .hero::after {
+        border-radius: 50%;
+        height: 102px;
+        top: calc(100% - 56px);
+    }
+    
+    
+    .hero__img{
+        width: 65%;
+        top: calc(100% - 100px);
+        left: 20%;
+    }
+    
+    .hero__title_text{
+        font-size: 60px;
+    }
+    
+
+    /*DATA*/
+    .data::after {
+        height: 144px;
+        top: calc(100% - 72px);
+    }
+    
+    .date__item-title{
+        font-size: 28px;
+    }
+        
+    
+    /*Presentation*/
+    .founder__image{
+        position: absolute;
+        left: 12%;
+    }
+    
+    .founder__presentation{
+        background-color: var(--purple-900);
+    }
+    
+    .founder__title{
+        font-size: 2rem;
+        font-weight: 350;
+        line-height: 120%;
+    }
+    
+    .founder__text{
+        font-size: 1.05rem;
+        font-weight: 300;
+        line-height: 180%;
+    }
+    
+    .btn{
+        background-color: var(--green);
+        color: var(--purple-900);
+        font-family: var(--font-2);
+        font-weight: 600;
+        border: 2px solid var(--green);
+    }
+    
+    .btn:hover{
+        transition: 0.3s ease-in-out;
+        background-color: var(--purple-900);
+        color: var(--green);
+    }
+    
+    
+    
+    /*Footer*/
+    .footer__media__icon{
+        fill: var(--purpple-500);
+    }
+    
+    .footer__media__icon:hover{
+        transition: 0.3s ease-in-out;
+        fill: var(--purple-900);
+        scale: 1.2;
+    }
+}

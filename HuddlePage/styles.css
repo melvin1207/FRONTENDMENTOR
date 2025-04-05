@@ -119,7 +119,7 @@ svg:hover{
         grid-template-columns: 52% 48%;
         grid-template-areas: 
         "a b";
-        gap: 50px;
+        gap: 90px;
     }
     
     .hero{

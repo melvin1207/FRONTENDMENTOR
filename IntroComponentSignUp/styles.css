@@ -205,7 +205,7 @@ div{
 
 @media (1000px <= width) {
     body{
-        padding: 121px 165px;
+        padding: 121px 120px;
         background-image: url(./images/bg-intro-desktop.png);
     }
 
@@ -213,12 +213,13 @@ div{
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 45px;
     }
     
     .description{
         text-align: left;
         margin-bottom: 0;
-        width: 50%;
+        width: 35%;
     }
     
     .description__title{
@@ -247,5 +248,10 @@ div{
     
     .trial__content__form{
         gap: 1.2rem;
+    }
+
+    .trial__content__form{
+        padding: 10px;
+        gap: 20px;
     }
 }

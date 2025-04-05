@@ -242,6 +242,7 @@ header .image-hero-2 {
   width: 110%;
   position: relative;
   right: -6%;
+  overflow: hidden;
 }
 
 .hero-content {
@@ -288,6 +289,8 @@ header .image-hero-2 {
 }
 @media (min-width: 1000px) {
   header {
+    max-width: 100vw;
+    overflow: hidden;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: repeat(2, auto);
     grid-template-areas: ". logo ." "imagen1 contenido imagen2";

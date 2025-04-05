@@ -218,6 +218,7 @@ body{
     
     .opinions__opinion{
         padding: 35px 32px;
+        max-width: 400px;
     }
     
     #opinion2{
