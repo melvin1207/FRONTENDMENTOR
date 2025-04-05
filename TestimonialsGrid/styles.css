@@ -140,8 +140,14 @@ h4{
     }
 }
 
-@media (min-width:1100px){
+@media (min-width:1024px){
+    body{
+        height: 100vh;
+        padding: auto auto;
+    }
+
     article{
+        height: 99.5%;
         grid-template-columns: repeat(4, minmax(200px, auto));
         grid-template-rows: repeat(2, minmax(200px, auto));
         grid-template-areas: 
@@ -149,9 +155,57 @@ h4{
         "c d d e";
     } 
 
+    section{
+        gap: 15px;
+    }
+
     #a{
         background-image: url(./images/bg-pattern-quotation.svg);
         background-repeat: no-repeat;
         background-position: 80% 5%;
     }
+
+    section{
+        padding: 25px;
+    }
+
+    h1{
+        font-size: 1.72rem;
+    }
+    
+    p{
+        font-size: 1.17rem;
+    } 
+}
+
+@media (min-width:1536px){
+    body{
+        display: flex;
+        align-items: center;
+    }
+
+    article{
+        height: 90%;
+        grid-template-columns: repeat(4, minmax(200px, auto));
+        grid-template-rows: repeat(2, minmax(200px, auto));
+        grid-template-areas: 
+        "a a b e"
+        "c d d e";
+    } 
+
+    section{
+        gap: 30px;
+    }
+
+    section{
+        padding: 32px;
+    }
+
+    h1{
+        font-size: 1.99rem;
+    }
+    
+    p{
+        font-size: 1.6rem;
+    } 
 }
