@@ -112,7 +112,6 @@
     line-height: 180%;
 }
 
-
 /*Presentation*/
 .founder__image{
     position: absolute;
@@ -148,8 +147,6 @@
     background-color: var(--purple-900);
     color: var(--green);
 }
-
-
 
 /*Footer*/
 .footer__media__icon{
@@ -195,7 +192,44 @@
     .date__item-title{
         font-size: 28px;
     }
-        
+    
+    /*Presentation*/
+    .founder__image{
+        left: 44px;
+    }
+    
+    .founder__title{
+        font-size: 48px;
+    }
+    
+    .founder__text{
+        font-size: 1rem;
+        line-height: 180%;
+    }
+    
+    .btn{
+        font-size: 18px;
+    }
+}
+
+@media (1024px <= width){
+    .hero{
+        background-size: 23%, 10%;
+        background-position: top 45% left -10%, top 90% right -3%;
+    }
+    
+    .hero__img{
+        width: 45%;
+        z-index: 10;
+        left: 30%;
+    }
+    
+    .hero__title_text{
+        font-size: 80px;
+        line-height: 100%;
+    }
+    
+    
     
     /*Presentation*/
     .founder__image{
@@ -208,41 +242,8 @@
     }
     
     .founder__title{
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 350;
         line-height: 120%;
-    }
-    
-    .founder__text{
-        font-size: 1.05rem;
-        font-weight: 300;
-        line-height: 180%;
-    }
-    
-    .btn{
-        background-color: var(--green);
-        color: var(--purple-900);
-        font-family: var(--font-2);
-        font-weight: 600;
-        border: 2px solid var(--green);
-    }
-    
-    .btn:hover{
-        transition: 0.3s ease-in-out;
-        background-color: var(--purple-900);
-        color: var(--green);
-    }
-    
-    
-    
-    /*Footer*/
-    .footer__media__icon{
-        fill: var(--purpple-500);
-    }
-    
-    .footer__media__icon:hover{
-        transition: 0.3s ease-in-out;
-        fill: var(--purple-900);
-        scale: 1.2;
     }
 }
