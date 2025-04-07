@@ -3,50 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Skilled e-learning landing page</title>
+  <title>Melvin | Skilled e-learning landing page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
+  <nav class="px-5 py-4 flex justify-between items-center md:px-11 md:py-6 lg:px-40">
+    <img src="./assets/logo-dark.svg" alt="Logo Page" class="h-5 lg:h-7">
 
-  Get Started
+    <button 
+      class="px-6 py-3 cursor-pointer text-white text-lg/[150%] font-bold rounded-[28px] bg-[#13183F] hover:bg-[#666CA3] transition-colors duration-300 ease-in-out">
+      Get Started
+    </button>
+  </nav>
 
-  Maximize skill, minimize budget
+  <header class="px-5 py-16 md:px-11 md:relative lg:px-40 lg:overflow-hidden">
+    <section class="mb-12 md:mb-0 md:w-[50vw] md:my-10 lg:my-28 lg:w-[50%]">
+      <h1 class="text-[#13183F] font-extrabold text-[40px]/[120%] mb-6 lg:text-[56px]">Maximize skill, minimize budget</h1>
 
-  Our modern courses across a range of in-demand skills will give you the 
-  knowledge you need to live the life you want.
+      <p class="text-[#83869A] font-medium text-lg/[150%] mb-10">
+        Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.
+      </p>
 
-  Get Started
+      <button class="hero__btn px-8 py-4 cursor-pointer text-white text-lg/[150%] font-bold rounded-[28px]">Get Started</button>
+    </section>
 
-  Check out our most popular courses!
+    <picture>
+      <source media="(min-width: 1020px)" srcset="./assets/image-hero-desktop@2x.webp">
+      <source media="(min-width: 768px)" srcset="./assets/image-hero-tablet@2x.webp">
+      <img src="./assets/image-hero-mobile@2x.webp" alt="Hero Image" class="w-full md:absolute md:w-[77vw] md:-top-[35%] md:-right-[170px] -z-10 lg:w-[60%]  lg:-top-[16vw] lg:-right-[220px]">
+    </picture>
+  </header>
 
-  Animation
-  Learn the latest animation techniques to create stunning motion 
-  design and captivate your audience.
-  Get Started
+  <main class="px-5 py-16 bg-linear-to-b from-white to-[#F0F1FF] grid gap-16 articles pb-20 md:px-44 md:pb-36  lg:pt-16 lg:px-48">
+    <article class="bg-linear-to-b from-[#FF6F48] to-[#F02AA6] rounded-[15px] text-white text-[28px]/[120%] font-extrabold p-8 md:text-[30px] md:py-16 md:px-8">
+      Check out our most popular courses!
+    </article>
 
-  Design
-  Create beautiful, usable interfaces to help shape the future of 
-  how the web looks.
-  Get Started
+    <article class="articles__card bg-white">
+      <img src="./assets/icon-animation.svg" alt="Animation" class="mb-9 -mt-24">
 
-  Photography
-  Explore critical fundamentals like lighting, composition, and focus 
-  to capture exceptional photos.
-  Get Started
+      <h2 class="text-[#13183F] text-xl/[120%] font-extrabold mb-6">Animation</h2>
 
-  Crypto
-  All you need to know to get started investing in crypto. Go from beginner 
-  to advanced with this 54 hour course.
-  Get Started
+      <p class="text-[#83869A] text-[16px]/[150%] font-bold mb-6">
+        Learn the latest animation techniques to create stunning motion design and captivate your audience.
+      </p>
 
-  Business
-  A step-by-step playbook to help you start, scale, and sustain your business 
-  without outside investment.
-  Get Started
+      <strong class="text-lg/[150%] text-[#F74780]">Get Started</strong>
+    </article>
 
-  Get Started
+    <article class="articles__card bg-white">
+      <img src="./assets/icon-design.svg" alt="Animation" class="mb-9 -mt-24">
 
+      <h2 class="text-[#13183F] text-xl/[120%] font-extrabold mb-6">Design</h2>
+
+      <p class="text-[#83869A] text-[16px]/[150%] font-bold mb-6">
+        Create beautiful, usable interfaces to help shape the future of how the web looks.
+      </p>
+
+      <strong class="text-lg/[150%] text-[#F74780]">Get Started</strong>
+    </article>
+
+    <article class="articles__card bg-white">
+      <img src="./assets/icon-photography.svg" alt="Animation" class="mb-9 -mt-24">
+      <h2 class="text-[#13183F] text-xl/[120%] font-extrabold mb-6">Photography</h2>
+      
+      <p class="text-[#83869A] text-[16px]/[150%] font-bold mb-6">
+        Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.
+      </p>
+
+      <strong class="text-lg/[150%] text-[#F74780]">Get Started</strong>
+    </article>
+
+    <article class="articles__card bg-white">
+      <img src="./assets/icon-crypto.svg" alt="Crypto" class="mb-9 -mt-24">
+      <h2 class="text-[#13183F] text-xl/[120%] font-extrabold mb-6">Crypto</h2>
+
+      <p class="text-[#83869A] text-[16px]/[150%] font-bold mb-6">All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+
+      <strong class="text-lg/[150%] text-[#F74780]">Get Started</strong>
+    </article>
+
+    <article class="articles__card bg-white">
+      <img src="./assets/icon-business.svg" alt="Bussness" class="mb-9 -mt-24">
+      <h2 class="text-[#13183F] text-xl/[120%] font-extrabold mb-6">Business</h2>
+      
+      <p class="text-[#83869A] text-[16px]/[150%] font-bold mb-6">
+        A step-by-step playbook to help you start, scale, and sustain your business without outside investment.
+      </p>
+
+      <strong class="text-lg/[150%] text-[#F74780]">Get Started</strong>
+    </article>
+  </main>
+
+  <footer class="py-6 px-5 flex justify-between items-center bg-[#13183F] md:px-11 lg:px-20">
+    <img src="./assets/logo-light.svg" alt="Logo footer" class="h-5">
+
+    <button
+      class=
+      "footer__btn px-6 py-3 cursor-pointer text-white text-lg/[150%] font-bold rounded-[28px]"
+      >
+      Get Started
+    </button>
+  </footer>
 </body>
 </html>

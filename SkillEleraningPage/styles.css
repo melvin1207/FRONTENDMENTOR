@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.hero__btn{
+    background-image: linear-gradient(to bottom, #FF6F48, #F02AA6);
+}
+
+.hero__btn:hover{
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* capa superior */
+        linear-gradient(to bottom, #FF6F48, #F02AA6);
+}
+
+.articles{
+    grid-template-columns: 1;
+    grid-template-rows: repeat(6, auto);
+    align-content: center;
+}
+
+.articles__card{
+    padding: 64px 32px 40px 32px;
+    border-radius: 15px;
+    box-shadow: 0px 25px 50px hsla(233, 92%, 29%, 0.04);
+}
+
+.footer__btn{
+    background-image: linear-gradient(to bottom, #4851FF, #F02AA6);
+}
+
+.footer__btn:hover{
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* capa superior */
+        linear-gradient(to bottom, #4851FF, #F02AA6);
+}
+
+@media (768px <= width){
+    .articles{
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        row-gap: 64px;
+    }
+}
+
+@media (1020px <= width){
+    .articles{
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+}
