@@ -7,6 +7,13 @@ fetch('./projects.json')
     })
     .catch(err => console.error(err))
 
+const techs = {
+    "html": "../assets/html.svg",
+    "css": "../assets/css.svg",
+    "js": "../assets/js.svg",
+    "sass": "../assets/sass.svg",
+    "tailwind": "../assets/tailwind.svg"
+}
 
 function createCards(datos){
     section.innerHTML = ""
@@ -15,29 +22,8 @@ function createCards(datos){
         let images = ''
 
         technologies.forEach(tech => {
-            if(tech == "html"){
-                images += `
-                    <img class="tech__logo" src=${'../assets/html.svg'} alt='${tech}'/>
-                `
-            } else if(tech == "css"){
-                images += `
-                    <img class="tech__logo" src=${'../assets/css.svg'} alt='${tech}' />
-                `
-            } else if(tech == "js"){
-                images += `
-                    <img class="tech__logo" src=${'../assets/js.svg'} alt='${tech}' />
-                `
-            } else if(tech == "sass"){
-                images += `
-                    <img class="tech__logo" src=${'../assets/sass.svg'} alt='${tech}' />
-                `
-            } else if(tech == "tailwind"){
-                images += `
-                    <img class="tech__logo" src=${'../assets/tailwind.svg'} alt='${tech}' />
-                `
-            }
+            images += `<img class="tech__logo" src=${techs[tech]} alt='${tech}'/>`
         })
-
 
         const articulo = document.createElement('a')
         articulo.setAttribute('href', url)
