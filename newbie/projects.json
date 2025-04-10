@@ -109,7 +109,7 @@
     },
     {
         "title": "Recipe Page",
-        "url": "./Recipe-page/dist/index.html",
+        "url": "./Recipe-page/index.html",
         "image": "./assets/recipe-page.png",
         "technologies": ["html", "css"]
     },

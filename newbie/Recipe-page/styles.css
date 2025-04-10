@@ -24,8 +24,135 @@ body{
 
 article{
     background-color: var(--white);
-    margin: 60px auto;
-    height: 1000px;
+    height: auto;
     border-radius: 15px;
+    max-width: 900px;
+}
+
+
+
+h1{
+    font-family: "Young Serif", serif;
+    font-weight: 700;
+    line-height: 1;
+}
+
+#resume{
+    color: var(--stone-600);
+    font-family: "Outfit", sans-serif;  
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#preparation{
+    background-color: var(--rose-50);
+}
+
+h3{
+    color: var(--rose-800);
+    font-family: "Outfit", sans-serif;  
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#preparation-list > li{
+    font-family: "Outfit", sans-serif;
+    color: var(--stone-600);
+    list-style-type: disc;
+    list-style-position:inside;
+    font-size: 16px;
+}
+
+#preparation-list > li::marker{
+    color: var(--rose-800);
+}
+
+strong{
+    color: var(--stone-600);
+}
+
+h2{
+    font-family: "Young Serif", serif;
+    color: var(--brown-800);
+    font-weight: 800    ;
+    font-size: 50px;
+}
+
+#ingredients-list{
+    padding: 20px;
+}
+
+#ingredients-list > li{
+    font-family: "Outfit", sans-serif;
+    color: var(--stone-600);
+    list-style-type: disc;
+    list-style-position:initial;
+    font-size: 16px;
+}
+
+#ingredients-list > li::marker{
+    color: var(--brown-800);
+    list-style-position: inside;
+}
+
+ol{
+    padding: 20px;
+}
+
+ol > li{
+    font-family: "Outfit", sans-serif;
+    list-style-type:decimal;
+    list-style-position: inherit;
+    color: var(--stone-600);
+    font-size: 16px;
+}
+
+ol > li::marker{
+    color: var(--brown-800);
+    font-weight: 400;
+}
+
+.li-inst{
+    color: var(--stone-600);
+}
+
+p{
+    color: var(--stone-600);
+    font-family: "Outfit", sans-serif;  
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+
+.table-value{
+    color: var(--brown-800);
+}
+
+.table-title{
+    color: var(--stone-600);
+}
+
+tr{
+    border-bottom: 1px solid var(--stone-150);
+}
+
+tr > th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+
+@media (1020px <= width){
+    body{
+        display: flex;
+        align-items: center;
+        padding: 60px 0;
+    }
+
+    article{
+        margin: 0 auto;
+    }
 }
 
