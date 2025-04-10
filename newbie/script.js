@@ -1,9 +1,10 @@
 const section = document.querySelector('.projects')
 
-fetch('./projects.json')
+fetch('../projects.json')
 .then(res => res.json())
     .then(data =>{
-        createCards(data)
+        newbies = data.filter(d => d.level =="newbie")
+        createCards(newbies)
     })
     .catch(err => console.error(err))
 
