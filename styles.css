@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto Mono", monospace;
+    background-color: rgb(240, 240, 240);
+    background-image: radial-gradient(#a8a8a8 1px, transparent 1px);
+    background-size: 30px 30px;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__text{
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 900;
+    margin-bottom: 90px;
+}
+
+.header__text__strong{
+    background-image: linear-gradient(
+        to bottom right,
+        #4148d0 0%,
+        #c850c0 46%,
+        #f35d22 100%
+    );
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.page__text{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.logos{
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    max-height: 150px;
+}
+
+.logos__logo{
+    width: 50px;
+}
+
+.levels{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px 30px;
+    text-align: center;
+    box-shadow: 10px 19px 2px;
+    margin-bottom: 40px;
+    color: black;
+    width: 80%;
+}
+
+.card__icon{
+    margin-bottom: 10px;
+    width: 30%;
+    fill: #2a3038;
+}
+
+.card__title{
+    font-size: 1.8rem;
+    color: black;
+    font-style: italic;
+}
+
+.caption{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+@media (768px <= width){
+    body{
+        padding: 60px 80px;
+        display: flex;
+    }
+    
+    .header__text{
+        font-size: 2.8rem;
+    }
+
+    .page__text{
+        margin-bottom: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .logos{
+        justify-content: space-evenly;
+    }
+    
+    .card{
+        width: 90%;
+    }
+    
+    .card__icon{
+        width: 50%;
+    }
+    
+    .card__title{
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (1020px <= width){
+    body{
+        max-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding: auto 40px;
+    }
+
+    .header__text{
+        font-size: 3.1rem;
+    }
+
+    .page__text{
+        font-size: 1.5rem;
+    }
+
+    .levels{
+        flex-direction: row;
+        gap: 50px;
+    }
+    
+    .card{
+        width: 100%;
+    }
+    
+    .card__icon{
+        width: 50%;
+    }
+    
+    .card__title{
+        font-size: 1.8rem;
+    }
+    
+    .caption{
+        position: absolute;
+        bottom: 3%;
+    }
+}

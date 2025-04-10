@@ -1,0 +1,158 @@
+[
+    {
+        "title": "3 Column Card",
+        "url": "./3ColumnCard/index.html",
+        "image": "./assets/3d-column-preview-card.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Article Preview Card",
+        "url": "./ArticleComponentMaster/index.html",
+        "image": "./assets/article-preview-component.png",
+        "technologies": ["html", "css", "js"]
+    },
+    {
+        "title": "Base Apparel Component",
+        "url": "./BaseComingSoon/index.html",
+        "image": "./assets/base-apparel-coming-soon.png",
+        "technologies": ["html", "css", "js"]
+    },
+    {
+        "title": "Blog Preview Card",
+        "url": "./PreviewBlogCard/index.html",
+        "image": "./assets/blog-preview-card.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Equalizer Landing Page",
+        "url": "./EqualizarLandingPage/index.html",
+        "image": "./assets/equalizer-landing-page.png",
+        "technologies": ["html", "sass"]
+    },
+    {
+        "title": "FAQ Accordion",
+        "url": "./FAQAccordion/index.html",
+        "image": "./assets/faq-accordion.png",
+        "technologies": ["html", "css", "js"]
+    },
+    {
+        "title": "Four Card Feature",
+        "url": "./FourCardFeature/index.html",
+        "image": "./assets/four-card-feature-section.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Huddle Landing Page",
+        "url": "./HuddlePage/index.html",
+        "image": "./assets/huddle-landing-page.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Interactive Rating Component",
+        "url": "./InteractiveRating/index.html",
+        "image": "./assets/interactive-rating-component.png",
+        "technologies": ["html", "sass", "js"]
+    },
+    {
+        "title": "Intro Component Sign Up",
+        "url": "./IntroComponentSignUp/index.html",
+        "image": "./assets/intro-component-signup.png",
+        "technologies": ["html", "css", "js"]
+    },
+    {
+        "title": "Meet Landing Page",
+        "url": "./MeetLandingPage/index.html",
+        "image": "./assets/meet-landing-page.png",
+        "technologies": ["html", "sass"]
+    },
+    {
+        "title": "NFT Preview Card",
+        "url": "./NFTCardComponent/index.html",
+        "image": "./assets/nft-previewcard-component.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Order Summary Component",
+        "url": "./OrderCard/index.html",
+        "image": "./assets/order-summary-component.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Ping Single Page",
+        "url": "./PingComingSoon/index.html",
+        "image": "./assets/ping-single-column-page.png",
+        "technologies": ["html", "css", "js"]
+    },
+    {
+        "title": "Pod Request Access",
+        "url": "./PodLandingPage/index.html",
+        "image": "./assets/pod-request-access.png",
+        "technologies": ["html", "css", "js"]
+    },
+    {
+        "title": "Product Preview Card",
+        "url": "./ProductPreviewCard/index.html",
+        "image": "./assets/product-component-preview-card.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Profile Card",
+        "url": "./ProfileCard/index.html",
+        "image": "./assets/profile-card-component.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Qr Component",
+        "url": "./Qrcode-component/index.html",
+        "image": "./assets/qr-component.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Recipe Page",
+        "url": "./Recipe-page/dist/index.html",
+        "image": "./assets/recipe-page.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Results Summary",
+        "url": "./ResultsSummary/index.html",
+        "image": "./assets/results-summary-component.png",
+        "technologies": ["html", "css", "js"]
+    },
+    {
+        "title": "Single Price Grid",
+        "url": "./SinglePriceGrid/index.html",
+        "image": "./assets/single-price-grid-component.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Skilled E-Learning Page",
+        "url": "./SkillEleraningPage/index.html",
+        "image": "./assets/skilled-elerning-landing-page.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Social Links Profile",
+        "url": "./SocialLinksMain/index.html",
+        "image": "./assets/social-links-profile.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Social Proof Section",
+        "url": "./SocialProofSection/index.html",
+        "image": "./assets/social-proof-section.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Stats Preview Card",
+        "url": "./StatsPreviewCard/index.html",
+        "image": "./assets/stats-preview-card.png",
+        "technologies": ["html", "css"]
+    },
+    {
+        "title": "Workit Landing Page",
+        "url": "./WorkitLandingPage/index.html",
+        "image": "./assets/workit-landing-page.png",
+        "technologies": ["html", "css"]
+    }
+]
