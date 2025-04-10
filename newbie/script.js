@@ -17,23 +17,23 @@ function createCards(datos){
         technologies.forEach(tech => {
             if(tech == "html"){
                 images += `
-                    <img class="tech__logo" src=${'./assets/html.svg'} alt='${tech}'/>
+                    <img class="tech__logo" src=${'../assets/html.svg'} alt='${tech}'/>
                 `
             } else if(tech == "css"){
                 images += `
-                    <img class="tech__logo" src=${'./assets/css.svg'} alt='${tech}' />
+                    <img class="tech__logo" src=${'../assets/css.svg'} alt='${tech}' />
                 `
             } else if(tech == "js"){
                 images += `
-                    <img class="tech__logo" src=${'./assets/js.svg'} alt='${tech}' />
+                    <img class="tech__logo" src=${'../assets/js.svg'} alt='${tech}' />
                 `
             } else if(tech == "sass"){
                 images += `
-                    <img class="tech__logo" src=${'./assets/sass.svg'} alt='${tech}' />
+                    <img class="tech__logo" src=${'../assets/sass.svg'} alt='${tech}' />
                 `
             } else if(tech == "tailwind"){
                 images += `
-                    <img class="tech__logo" src=${'./assets/tailwind.svg'} alt='${tech}' />
+                    <img class="tech__logo" src=${'../assets/tailwind.svg'} alt='${tech}' />
                 `
             }
         })
