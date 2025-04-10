@@ -21,7 +21,7 @@
         "title": "Blog Preview Card",
         "url": "./PreviewBlogCard/index.html",
         "image": "./assets/blog-preview-card.png",
-        "technologies": ["html", "css"]
+        "technologies": ["html", "css", "tailwind"]
     },
     {
         "title": "Equalizer Landing Page",
@@ -105,7 +105,7 @@
         "title": "Qr Component",
         "url": "./Qrcode-component/index.html",
         "image": "./assets/qr-component.png",
-        "technologies": ["html", "css"]
+        "technologies": ["html", "css", "tailwind"]
     },
     {
         "title": "Recipe Page",
@@ -129,13 +129,13 @@
         "title": "Skilled E-Learning Page",
         "url": "./SkillEleraningPage/index.html",
         "image": "./assets/skilled-elerning-landing-page.png",
-        "technologies": ["html", "css"]
+        "technologies": ["html", "css", "tailwind"]
     },
     {
         "title": "Social Links Profile",
         "url": "./SocialLinksMain/index.html",
         "image": "./assets/social-links-profile.png",
-        "technologies": ["html", "css"]
+        "technologies": ["html", "css", "tailwind"]
     },
     {
         "title": "Social Proof Section",
@@ -153,6 +153,6 @@
         "title": "Workit Landing Page",
         "url": "./WorkitLandingPage/index.html",
         "image": "./assets/workit-landing-page.png",
-        "technologies": ["html", "css"]
+        "technologies": ["html", "css", "tailwind"]
     }
 ]

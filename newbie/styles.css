@@ -17,6 +17,22 @@ body{
     justify-content: center;
 }
 
+.btn__return{
+    font-size: 1.4rem;
+    padding: 10px 30px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    position: fixed;
+    top: 10px;
+    left: 5%;
+}
+
+.btn__return:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
 .newbie__title{
     font-size: 2.5rem;
     text-align: center;
