@@ -1,0 +1,8 @@
+[
+    {
+        "title": "Testimonials Grid Section",
+        "url": "./TestimonialsGrid/index.html",
+        "image": "./assets/testimonials-grid-section.png",
+        "technologies": ["html", "css"]
+    }
+]

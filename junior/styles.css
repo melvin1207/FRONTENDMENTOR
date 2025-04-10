@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto Mono", monospace;
+    background-color: rgb(240, 240, 240);
+    background-image: radial-gradient(#a8a8a8 1px, transparent 1px);
+    background-size: 30px 30px;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__return{
+    font-size: 1.4rem;
+    padding: 10px 30px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    position: fixed;
+    top: 10px;
+    left: 5%;
+}
+
+.btn__return:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.newbie__title{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card{
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+    height: auto;
+    padding: 20px;
+    box-shadow: 7px 10px 20px black;
+    max-width: 350px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover{
+    cursor: pointer;
+    scale: 1.05;
+    transition: 0.3s ease-in-out;
+}
+
+.card:not(:hover){
+    transition: 0.3s ease-in-out;
+}
+
+
+.card__img{
+    object-fit: fill;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.card__title{
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.tech__logos{
+    display: flex;
+    align-items: center;
+}
+
+.tech__logos{
+    width: 10%;
+    gap: 10px;
+}
+
+@media (768px <= width){
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (1020px <= width){
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (1920px <= width){
+    .projects{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
