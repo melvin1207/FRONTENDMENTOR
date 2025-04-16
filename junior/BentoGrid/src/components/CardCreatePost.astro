@@ -1,5 +1,6 @@
 ---
 import Card from "./Card.astro";
+import { Image } from 'astro:assets';
 import createPostImg from '../assets/images/illustration-create-post.webp'
 ---
 
@@ -10,6 +11,6 @@ import createPostImg from '../assets/images/illustration-create-post.webp'
             <strong class="text-brand-purple-500 font-medium">quiker</strong>
         </h1>
 
-        <img src={createPostImg.src} alt="Post" class="w-7/12 md:w-9/12 lg:w-12/12">
+        <Image src={createPostImg} alt="Post" class="w-7/12 md:w-9/12 lg:w-12/12"/>
     </article>
 </Card>

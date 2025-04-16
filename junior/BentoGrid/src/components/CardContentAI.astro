@@ -1,12 +1,13 @@
 ---
 import Card from "./Card.astro";
+import { Image } from 'astro:assets';
 import aiImg from '../assets/images/illustration-ai-content.webp'
 ---
 
 <Card bg="bg-brand-yellow-500" pTop="pt-brand-300" pBottom="pb-brand-300" pLeft="pl-brand-300" pRight="pr-brand-300" gridArea="card-content-ai">
     <article>
         <h1 class="text-[32px]/[28px] md:text-[36px]/[30px] lg:text-[40px]/[36px] tracking-[-6%] lg:tracking-[-2px] font-medium mb-brand-300 lg:mb-[55px]">Write your content using AI</h1>
-
-        <img src={aiImg.src} alt="Image AI" class="w-9/12 md:w-10/12 lg:w-12/12">
+        
+        <Image src={aiImg} alt="AI content" class="w-9/12 md:w-10/12 lg:w-12/12"/>
     </article>
 </Card>
