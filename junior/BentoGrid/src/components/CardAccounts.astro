@@ -1,11 +1,12 @@
 ---
 import Card from "./Card.astro";
-import multipleAccounstImg from '../assets/images/illustration-multiple-platforms.webp'
+import { Image } from "astro:assets";
+import multipleAccounstImg from '../../public/illustration-multiple-platforms.webp'
 ---
 
 <Card bg="bg-brand-white" pTop="pt-brand-200 md:pt-brand-300" pBottom="pb-brand-200 md:pb-brand-300" pLeft="pl-brand-200 md:pl-brand-300" pRight="pr-brand-200 md:pr-brand-300" gridArea="card-accounts">
     <article>
-        <img src={multipleAccounstImg.src} alt="Multiple Accounts" class="mb-brand-200 md:mb-[54px] lg:mb-[20px]">
+        <img src={multipleAccounstImg.src} alt="Multiple Accounts" class="mb-brand-200 md:mb-[54px] lg:mb-[20px]"/>
         <h2 class="text-[24px]/[24px] tracking-[-6%] font-medium md:text-[28px]/[26px] lg:text-[32px]/[28px] lg:tracking-[-2px]">Manage multiple accounts and platforms.</h2>
     </article>
 </Card>

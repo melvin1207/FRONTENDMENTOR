@@ -1,13 +1,14 @@
 ---
 import Card from "./Card.astro";
-import scheduleImage from '../assets/images/illustration-schedule-posts.webp'
+import { Image } from "astro:assets";
+import scheduleImage from '../../public/illustration-schedule-posts.webp'
 ---
 
 <Card bg="bg-brand-purple-100" pTop="pt-brand-400 md:pt-[32px lg:pt-[50px]" pBottom="pb-brand-400 md:pb-[32px] lg:pb-[50px]" pLeft="pl-brand-400 md:pl-[165px] lg:pl-brand-400" pRight="pr-brand-400 md:pr-[165px] lg:pr-0" gridArea="card-schechuled-media">
     <article class="text-center lg:text-left lg:overflow-hidden">
         <h1 class="text-[24px]/[24px] tracking-[-6%] font-medium mb-brand-300 md:text-[28px]/[26px] lg:text-[32px]/[28px] lg:tracking-[-2px] lg:pr-brand-400">Schedule to social media.</h1>
 
-        <img src={scheduleImage.src} alt="Schedule" class="w-12/12 lg:h-[318px] lg:w-[1000px]">
+        <Image src={scheduleImage} alt="Schedule" class="w-12/12 lg:h-[318px] lg:w-[1000px]"/>
 
         <p class="text-[18px]/[20px] font-normal tracking-[0px] mt-brand-300 lg:pr-brand-400">Optimize post timings to publish content at the perfect time for your audience.</p>
     </article> 

@@ -1,12 +1,13 @@
 ---
 import Card from "./Card.astro";
-import calendarImage from '../assets/images/illustration-consistent-schedule.webp'
+import { Image } from "astro:assets";
+import calendarImage from '../../public/illustration-consistent-schedule.webp'
 ---
 
 <Card bg="bg-brand-yellow-500" pTop="pt-brand-200 md:pt-brand-300" pBottom="pb-0" pLeft="pl-brand-200 md:pl-brand-300" pRight="pr-brand-200 md:pr-brand-300" gridArea="card-calendar">
     <article class="max-h-[215px] overflow-hidden">
         <h2 class="text-[24px]/[24px] tracking-[-6%] font-medium mb-brand-200 md:text-[28px]/[26px] lg:text-[32px]/[28px] lg:tracking-[-2px]">Maintain a consistent posting schedule.</h2>
 
-        <img src={calendarImage.src} alt="Calendar" class="w-9/12 md:w-8/12 lg:w-12/12">
+        <Image src={calendarImage} alt="Calendar" class="w-9/12 md:w-8/12 lg:w-12/12"/>
     </article>
 </Card>

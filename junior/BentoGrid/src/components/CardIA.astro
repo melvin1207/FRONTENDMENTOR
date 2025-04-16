@@ -1,6 +1,7 @@
 ---
 import Card from "./Card.astro";
-import fiveStars from '../assets/images/illustration-five-stars.webp'
+import { Image } from "astro:assets";
+import fiveStars from '../../public/illustration-five-stars.webp'
 ---
 
 <Card bg="bg-brand-purple-500" pTop="pt-brand-500 md:pt-[72px] lg:pt-[62px]" pBottom="pb-brand-500 md:pb-[72px] lg:pb-[62px]" pLeft="pl-brand-400 md:pl-[76px] lg:pl-brand-400" pRight="pr-brand-400 md:pr-[76px] lg:pr-brand-400" gridArea="card-ia">
@@ -11,7 +12,7 @@ import fiveStars from '../assets/images/illustration-five-stars.webp'
             Faster with AI
         </h1>
 
-        <img src={fiveStars.src} alt="Calificacion" class="w-5/12 mx-auto lg:w-4/12">
+        <Image src={fiveStars} alt="Calificacion" class="w-5/12 mx-auto lg:w-4/12"/>
 
         <h2 class="text-present-4/[20px] mt-brand-100 text-white font-thin">Over 4,000 5-star reviews</h2>
     </article>
