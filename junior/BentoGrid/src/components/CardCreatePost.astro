@@ -1,0 +1,15 @@
+---
+import Card from "./Card.astro";
+import createPostImg from '../assets/images/illustration-create-post.webp'
+---
+
+<Card bg="bg-brand-yellow-100" pTop="pt-brand-400 md:pt-[75px] lg:pt-[72px]" pBottom="pb-brand-400 md:pb-[105px] lg:pb-[72px]" pLeft="pl-brand-400 md:pl-brand-300 lg:pl-brand-400" pRight="pr-brand-400 md:pr-brand-300 lg:pr-brand-400" gridArea="card-create-post">
+    <article>
+        <h1 class="text-[32px]/[28px] md:text-[36px]/[30px] tracking-[-6%] font-medium mb-brand-300 lg:text-[40px]/[36px] lg:tracking-[-2px]">
+            Create and shedule content
+            <strong class="text-brand-purple-500 font-medium">quiker</strong>
+        </h1>
+
+        <img src={createPostImg.src} alt="Post" class="w-7/12 md:w-9/12 lg:w-12/12">
+    </article>
+</Card>

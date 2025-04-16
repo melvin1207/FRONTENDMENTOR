@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+
+@theme{
+    --color-brand-purple-500: #7551dc;
+    --color-brand-purple-100: #DBD1FC;
+    --color-brand-yellow-100: #F9EEE2;
+    --color-brand-yellow-500: #FFCC6A;
+    --color-brand-white: #FFFFFF;
+    --color-brand-black: #121212; 
+
+    --spacing-brand-500: 40px;
+    --spacing-brand-400: 32px;
+    --spacing-brand-300: 24px;
+    --spacing-brand-200: 16px;
+    --spacing-brand-100: 8px;
+
+    --text-present-1: 62px;
+    --text-present-1--line-height: 90%;
+    --text-present-1--letter-spacing: -2px; 
+    --text-present-1--font-weight: medium; 
+
+    --text-present-2: 40px;
+    --text-present-2--line-height: 90%;
+    --text-present-2--letter-spacing: -2px; 
+    --text-present-2--font-weight: medium;
+
+    --text-present-3: 32px;
+    --text-present-3--line-height: 87.5%;
+    --text-present-3--letter-spacing: -2px; 
+    --text-present-3--font-weight: medium;
+
+    --text-present-4: 18px;
+    --text-present-4--line-height: 111%;
+    --text-present-4--letter-spacing: 0px; 
+    --text-present-4--font-weight: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url(../assets/fonts/DMSans-VariableFont_opsz,wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+    font-family: "DM Sans", sans-serif;
+    padding: 32px 16px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(8, auto);
+    gap: 32px;
+    background-color: #F6F5F6;
+}
+
+@media(768px <= width){
+    body{
+        padding: 52px 40px 75px 40px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        "A A"
+        "B C"
+        "D D"
+        "E E"
+        "F F"
+        "G H";
+    }
+
+    .card-ia{
+        grid-area: A;
+    }
+
+    .card-accounts{
+        grid-area: B;
+    }
+
+    .card-calendar{
+        grid-area: C;
+    }
+
+
+    .card-schechuled-media{
+        grid-area: D;
+    }
+
+    .card-grow-followers{
+        grid-area: E;
+    }
+
+    .card-faster-audience{
+        grid-area: F;
+    }
+
+    .card-create-post{
+        grid-area: G;
+    }
+
+    .card-content-ai{
+        grid-area: H;
+    }
+}
+
+@media(1020px <= width){
+    body{
+        padding: auto;
+        max-height: 100vh;
+        justify-content: center;
+        grid-template-columns: repeat(4, 256px);
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas: 
+        "G A A D"
+        "G A A D"
+        "G A A D"
+        "G A A D"
+        "G B C D"
+        "H B C D"
+        "H B C D"
+        "H F E E"
+        "H F E E"
+        "H F E E";
+    }
+}

@@ -1,0 +1,18 @@
+---
+interface Props{
+    pTop ?: string;
+    pBottom ?: string;
+    pLeft ?: string;
+    pRight ?: string;
+    bg : string,
+    gridArea : string
+}
+
+const { pTop = 'pt-0', pBottom = 'pb-0', pLeft = 'pl-0', pRight = 'pr-0', bg, gridArea} = Astro.props
+
+const classes = `rounded-[10px] ${pTop} ${pBottom} ${pLeft} ${pRight} ${bg} ${gridArea}`;
+---
+
+<section class={classes}>
+    <slot />
+</section>
