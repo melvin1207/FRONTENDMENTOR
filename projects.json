@@ -187,5 +187,12 @@
         "url": "./TestimonialsGrid/index.html",
         "image": "./assets/testimonials-grid-section.png",
         "technologies": ["html", "css"]
+    },
+    {
+        "level": "junior",
+        "title": "Bento Grid",
+        "url": "https://bentogridmelvin.netlify.app/",
+        "image": "./assets/testimonials-grid-section.png",
+        "technologies": ["tailwind", "astro", "css"]
     }
 ]
