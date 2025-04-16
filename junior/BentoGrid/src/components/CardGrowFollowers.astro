@@ -1,12 +1,12 @@
 ---
 import Card from "./Card.astro";
-import { Image } from 'astro:assets';
+import Image from "astro/components/Image.astro";
 import growFollowersImage from '../assets/images/illustration-grow-followers.webp'
 ---
 
 <Card bg="bg-brand-purple-500" pTop="pt-brand-300 md:pt-[22.5px] lg:pt-brand-300" pBottom="pb-brand-300  md:pb-[22.5px] lg:pb-brand-300" pRight="pr-brand-300  md:pr-[81.5px] lg:pr-brand-300" pLeft="pl-brand-300 md:pl-[81.5px] lg:pl-brand-300" gridArea="card-grow-followers">
     <article class="text-center text-white md:flex md:items-center md:gap-[40px]">
-        <Image src={growFollowersImage} alt="Grow followers" class="w-9/12 mx-auto md:w-5/12 md:mx-0 lg:h-12/12" />
+        <Image src={growFollowersImage} alt="Grow followers" class="w-9/12 mx-auto md:w-5/12 md:mx-0 lg:h-12/12"/>
         <h1 class="text-[32px]/[28px] md:text-[36px]/[30px] tracking-[-6%] font-medium mt-brand-500 md:m-0 lg:text-[40px]/[36px] lg:tracking-[-2px] lg:text-start">Grow followers with non-stop content.</h1>
     </article>
 </Card>
