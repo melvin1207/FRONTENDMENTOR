@@ -13,7 +13,8 @@ const techs = {
     "css": "../assets/css.svg",
     "js": "../assets/js.svg",
     "sass": "../assets/sass.svg",
-    "tailwind": "../assets/tailwind.svg"
+    "tailwind": "../assets/tailwind.svg",
+    "astro": "../assets/astro.svg"
 }
 
 function createCards(datos){

@@ -76,10 +76,14 @@ a{
     border-radius: 30px;
     padding: 20px 30px;
     text-align: center;
-    box-shadow: 10px 19px 2px;
     margin-bottom: 40px;
     color: black;
     width: 80%;
+}
+
+.card:hover{
+    transition: box-shadow 0.1s ease-in-out;
+    box-shadow: 10px 19px 2px;
 }
 
 .card__icon{
