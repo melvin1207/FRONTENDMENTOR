@@ -96,6 +96,10 @@
   height: 1.2rem;
 }
 
+main{
+  height: 100vh;
+}
+
 .main-result {
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   grid-area: a;

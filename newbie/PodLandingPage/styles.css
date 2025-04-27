@@ -11,7 +11,7 @@ body{
     font-family: "Chivo", sans-serif;
     background-image: linear-gradient(hsla(224, 35%, 11%, 0.9), hsla(224, 35%, 11%, 0.9)),url(./assets/mobile/image-host.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%, cover;
 }
 
 .container{
